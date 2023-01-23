@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="to-do">
+        <div class="head"></div>
+        <p class="todo-heading">To-Do List</p>
+        <div class="sort-icon">
+          <img
+            class="sortDown-grey"
+            src="icon/sortDownGrey.svg"
+            alt="sort-down"
+          />
+          <img class="sortUp-grey" src="icon/sortUpGrey.svg" alt="sort-up" />
+          <img
+            class="sortDown-black"
+            src="icon/sortDownBlack.svg"
+            alt="sort-down"
+          />
+          <img class="sortUp-black" src="icon/sortUpBlack.svg" alt="sort-up" />
+        </div>
+        <div>
+          <ul class="list-group"></ul>
+        </div>
+        <form id="todo-form">
+          <div class="input-parent">
+            <input class="todo-input" type="text" name="todo" />
+            <img class="xmark" src="./icon/x-mark.svg" alt="xmark" />
+          </div>
+          <div class="btn-parent">
+            <div class="plus"><img src="./icon/+.svg" alt="plus" /></div>
+            <button type="submit" class="btn">
+              <p>Добавить</p>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="./JS/index.js"></script>
+  </body>
+</html>
